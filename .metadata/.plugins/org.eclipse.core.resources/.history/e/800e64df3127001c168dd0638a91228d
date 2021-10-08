@@ -1,0 +1,37 @@
+package webdeveloper_one.doitjava;
+
+public class A {
+
+	public void abc() {
+		System.out.println("abc 메소드 입니다");
+	}
+	
+	// 인스턴스 inner class
+	static class B{
+		public void def() {
+			System.out.println("def 메소드 입니다");
+		}
+		
+		static class C{
+			public void ghi() {
+				System.out.println("ghi 메소드 입니다");
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.abc();
+		
+		// class B가 static 일때
+		A.B b = new B();
+		b.def();
+		
+		A.B.C c = new B.C();
+		c.ghi();
+		// class B가 static 아닐때
+		// A.B ab = a.new B();
+		// ab.def();
+	}
+
+}

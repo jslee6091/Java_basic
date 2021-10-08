@@ -1,0 +1,38 @@
+package webdeveloper_one.doitjava.exam;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+// 본인 이름 나이 주소를 입출력 통해서 이름이면 이름, 나이면 나이, 주소면 주소를 출력
+public class HomeAddress {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+		
+		String temp = "";
+		while(temp != null) {
+			System.out.println("이름, 나이, 주소 중 하나를 선택하세요");
+			temp = buf.readLine();
+			if(temp.equals("이름")) {
+				String name = "";
+				System.out.println("이름을 입력하세요");
+				name = buf.readLine();
+				System.out.println("이름 : " + name);
+			}
+			else if(temp.equals("나이")) {
+				String age = "";
+				System.out.println("나이를 입력하세요");
+				age = buf.readLine();
+				System.out.println("나이 : " + age);
+			}
+			else if(temp.equals("주소")) {
+				String address = "";
+				System.out.println("주소를 입력하세요");
+				address = buf.readLine();
+				System.out.println("주소 : " + address);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,88 @@
+package webdeveloper_one.doitjava;
+
+import java.util.ArrayList;
+
+public class List_2 {
+
+	public String name;
+	public int age;
+	public String address;
+	
+	public List_2(String name, int age, String address) {
+		this.name = name;
+		this.age = age;
+		this.address = address;
+	}
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public static void main(String[] args) {
+		
+		List_2 list = new List_2("이재성", 22, "서울");
+		List_2 list2 = new List_2("이재성2", 23, "서울2");
+		List_2 list3 = new List_2("이재성3", 24, "서울3");
+		
+		ArrayList array = new ArrayList();
+		array.add(list);
+		array.add(list2);
+		array.add(list3);
+		
+		for (int i = 0; i < array.size(); i++) {
+			List_2 list4 = (List_2)array.get(i);
+			System.out.println(list4.getName());
+			System.out.println(list4.getAge());
+			System.out.println(list4.getAddress());
+			System.out.println("★★★★★★★★");
+		}
+		
+		System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
+		
+		// remove 2번째 방 지우시오
+		array.remove((List_2)list2);
+		for (int i = 0; i < array.size(); i++) {
+			List_2 list4 = (List_2)array.get(i);
+			System.out.println(list4.getName());
+			System.out.println(list4.getAge());
+			System.out.println(list4.getAddress());
+			System.out.println("★★★★★★★★");
+		}
+		
+	}
+
+}

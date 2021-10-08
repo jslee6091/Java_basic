@@ -1,0 +1,13 @@
+package webdeveloper_one.doitjava;
+
+public class Gvar_1 {
+
+	public static void main(String[] args) {
+		
+		// 지역변수는 반드시 초기화, 접근제한자 오지않음
+		
+		String name = "이재성";
+		System.out.println(name);
+	}
+
+}

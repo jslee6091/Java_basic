@@ -1,0 +1,11 @@
+package webdeveloper_one.doitjava.child;
+
+public class CarDealer2 {
+
+	// 서초구 삼성, 현대 대리점
+	public static void main(String[] args) {
+		
+
+	}
+
+}

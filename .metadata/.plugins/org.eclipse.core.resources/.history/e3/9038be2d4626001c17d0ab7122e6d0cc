@@ -1,0 +1,41 @@
+package webdeveloper_one.doitjava;
+
+public class Switch_1 {
+
+	public static void main(String[] args) {
+		
+		int choice = 10;
+		
+		switch (choice) {
+			case 10:
+				System.out.println(choice);
+				break;
+			case 20:
+				System.out.println(choice);
+				break;
+			case 30:
+				System.out.println(choice);
+				break;
+			default:
+				break;
+		}
+		
+		String name = "È«±æµ¿";
+		
+		switch (name) {
+			case "ÀÌ¼ø½Å":
+				System.out.println(name);
+				break;
+			case "È«±æµ¿":
+				System.out.println(name);
+				break;
+			case "±¤°³Åä´ë¿Õ":
+				System.out.println(name);
+				break;
+			default:
+				break;
+		}
+
+	}
+
+}

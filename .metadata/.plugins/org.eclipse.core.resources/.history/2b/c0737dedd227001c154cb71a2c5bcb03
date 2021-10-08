@@ -1,0 +1,23 @@
+package webdeveloper_one.doitjava;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class List_1 {
+
+	public static void main(String[] args) {
+		String[] arr = {"RE", "SQ", "LW", "UB"};
+		List<String> lst = new ArrayList<String>();
+		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[0].length(); j++) {
+//				
+//			}
+			lst.add(arr[i]);
+		}
+
+		for(int i = 0; i < arr.length; i++) {
+			System.out.println(lst.get(i));
+		}
+	}
+
+}

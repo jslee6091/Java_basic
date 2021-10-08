@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\project\work\jwork2\.metadata\.plugins\org.eclipse.jdt.core
+3842711404.index
+1865797976.index
+2856653152.index

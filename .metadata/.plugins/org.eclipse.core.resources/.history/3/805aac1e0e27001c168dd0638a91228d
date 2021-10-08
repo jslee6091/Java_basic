@@ -1,0 +1,19 @@
+package webdeveloper_one.doitjava.child;
+
+abstract class A{
+	abstract void abc();
+}
+
+public class AbstractClass_2 {
+
+	public static void main(String[] args) {
+		A a = new A() {
+			@Override
+			void abc() {
+				System.out.println("hello");
+			}
+		};
+		
+	}
+
+}

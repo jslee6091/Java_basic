@@ -1,0 +1,91 @@
+package webdeveloper_one.doitjava;
+
+import java.util.Collection;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
+public class Hash_1 {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> hash = new HashMap();
+		
+//		hash.put("dd", 33);
+//		hash.put("ee", 89);
+//		hash.put("ff", 64);
+//		
+//		System.out.println(hash.keySet());
+//		System.out.println(hash.values());
+//		
+//		hash.clear();
+//		
+//		hash.put(1, "1@");
+//		hash.put(3, "3@");
+//		hash.put(2, "2@");
+		
+		for (int i = 0; i < hash.size(); i++) {
+			System.out.println(hash.get(i + 1));
+		}
+		
+		hash.clear();
+		
+		hash.put("이재성", "이재성");
+		hash.put("홍길동", "홍길동");
+		hash.put("아무개", "아무개");
+		hash.put("이름", "주소");
+		
+		// 값을 출력하시오
+		for(Object key : hash.keySet()) {
+			System.out.println(key + " : " + hash.get(key));
+		}
+		
+//		ArrayList lsd = new ArrayList();
+//		
+//		String ddd[] = {"LR", "OS", "QP"};
+//		for(int i = 0; i < ddd.length; i++) {
+//			char ii[] = ddd[i].toCharArray();
+//			for(int j = 0; j < ii.length; j++) {
+//				lsd.add(ii[j]);
+//			}
+//		}
+//		
+//		for(int i = 0; i < lsd.size(); i++) {
+//			System.out.println(lsd.get(i));
+//		}
+		
+//		char dd[] = "이재성".toCharArray();
+//		for (int i = 0; i < dd.length; i++) {
+//			System.out.print(dd[i] + " ");
+//		}
+//		System.out.println();
+		
+		Collection col = hash.values();
+		Object ob[] = col.toArray();
+		System.out.println(col);
+		System.out.println(hash.values());
+		
+		// 키와 값이 일치하는 것을 출력
+		for(String key : hash.keySet()) {
+			if(key.equals(hash.get(key))) {
+				System.out.println(key + " : " + hash.get(key));
+			}
+		}
+		
+		Hashtable ht = new Hashtable();
+		ht.put("이재성", "이재성1");
+		ht.put("홍길동", "홍길동2");
+		ht.put("아무개", "아무개3");
+		
+		Enumeration enu = ht.keys();
+		
+		while(enu.hasMoreElements()) {
+			String strkey = enu.nextElement().toString();
+			System.out.println(ht.get(strkey).equals(strkey) );
+		}
+		
+
+	}
+
+}

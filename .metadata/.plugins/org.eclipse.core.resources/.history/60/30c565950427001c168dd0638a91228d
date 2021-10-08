@@ -1,0 +1,12 @@
+package webdeveloper_one.doitjava;
+
+public class Final_1 {
+
+	public static void main(String[] args) {
+		final String name = "홍길동";
+//		name = "아무개";
+		System.out.println(name);
+
+	}
+
+}

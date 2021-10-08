@@ -1,0 +1,52 @@
+package webdeveloper_one.doitjava.child;
+
+// 현대차 타입
+interface A4{
+	public String Hcar();
+}
+
+// 기아차 타입
+interface B4{
+	public String Kcar();
+}
+
+// 삼성차 타입
+interface Samsung{
+	public String Scar();
+}
+
+// class 는 하나만 상속 받을 수 있다(object 생략)
+// interface 는 상속 받는 개수의 제한이 없다
+public class CarDealer implements A4, B4, Samsung{
+
+	public void Name() {
+		System.out.println("InheritanceOfInterface_1 name");
+	}
+	
+	@Override
+	public String Scar() {
+		System.out.println("삼성차입니다");
+		return "삼성차";
+	}
+	
+	@Override
+	public String Hcar() {
+		System.out.println("현대차입니다");
+		return "현대차";
+	}
+	
+	@Override
+	public String Kcar() {
+		System.out.println("기아차입니다");
+		return "기아차";
+	}
+	
+	public static void main(String[] args) {
+		CarDealer ob = new CarDealer();
+		ob.Name();
+		ob.Hcar();
+		ob.Kcar();
+		ob.Scar();
+	}
+
+}

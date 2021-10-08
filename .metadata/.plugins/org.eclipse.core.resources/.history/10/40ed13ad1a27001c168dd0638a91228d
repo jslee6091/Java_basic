@@ -1,0 +1,19 @@
+package webdeveloper_one.doitjava.child;
+
+public class CarManager {
+
+	public static void main(String[] args) {
+		CarDealer car1 = new CarDealer();
+		car1.Car("현대차");
+		car1.Car("기아차");
+		car1.Car("삼성차");
+		
+		CarDealer2 car2 = new CarDealer2();
+		car2.Car("현대차");
+		car2.Car("기아차");
+		car2.Car("삼성차");
+		
+
+	}
+
+}

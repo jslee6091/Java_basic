@@ -1,0 +1,21 @@
+package webdeveloper_one.doitjava;
+
+public class Constructor_2 {
+
+	public String name;
+	
+	public Constructor_2() {
+		this("이름");
+		System.out.println("기본생성자");
+	}
+	
+	public Constructor_2(String name) {
+		System.out.println(name + "기본 생성자에서 점프한 생성자");
+	}
+	
+	public static void main(String[] args) {
+		Constructor_2 con = new Constructor_2("이재성");
+
+	}
+
+}

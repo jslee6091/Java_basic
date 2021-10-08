@@ -1,0 +1,46 @@
+package webdeveloper_one.doitjava;
+
+import java.util.Collection;
+import java.util.HashMap;
+
+public class Hash_1 {
+
+	public static void main(String[] args) {
+		
+		HashMap hash = new HashMap();
+		
+		hash.put("dd", 33);
+		hash.put("ee", 89);
+		hash.put("ff", 64);
+		
+		System.out.println(hash.keySet());
+		System.out.println(hash.values());
+		
+		hash.clear();
+		
+		hash.put(1, "1@");
+		hash.put(3, "3@");
+		hash.put(2, "2@");
+		
+		for (int i = 0; i < hash.size(); i++) {
+			System.out.println(hash.get(i + 1));
+		}
+		
+		hash.clear();
+		
+		hash.put("이재성", "이재성value");
+		hash.put("홍길동", "홍길동value");
+		hash.put("아무개", "아무개value");
+		
+		// 값을 출력하시오
+		for(Object key : hash.keySet()) {
+			System.out.println(key + " : " + hash.get(key));
+		}
+		
+		Collection col = hash.values();
+		System.out.println(col);
+		System.out.println(hash.values());
+
+	}
+
+}

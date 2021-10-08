@@ -1,0 +1,23 @@
+package webdeveloper_one.doitjava;
+
+public class A {
+
+	public void abc() {
+		System.out.println("abc 메소드 입니다");
+	}
+	
+	// 인스턴스 inner class
+	class B{
+		public void def() {
+			System.out.println("def 메소드 입니다");
+		}
+	}
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.abc();
+		A.B ab = a.new B();
+		ab.def();
+	}
+
+}

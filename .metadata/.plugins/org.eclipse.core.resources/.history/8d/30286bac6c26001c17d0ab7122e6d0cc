@@ -1,0 +1,19 @@
+package webdeveloper_one.doitjava;
+
+public class Method_1 {
+
+	public void Print() {
+		System.out.println("void는 return 타입 필요 없음");
+	}
+	
+	public static void main(String[] args) {
+		
+		// 변수 : 움직일 수 없다
+		// 메소드가 움직인다(동사)
+		System.out.println("출력");
+		new Method_1().Print();
+		
+
+	}
+
+}

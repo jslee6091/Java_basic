@@ -1,0 +1,10 @@
+package webdeveloper_one.doitjava.child;
+
+public class CarDealer2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

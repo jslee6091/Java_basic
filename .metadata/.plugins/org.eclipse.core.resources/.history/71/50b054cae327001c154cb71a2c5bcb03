@@ -1,0 +1,21 @@
+package webdeveloper_one.doitjava;
+
+import java.util.HashMap;
+
+public class Hash_1 {
+
+	public static void main(String[] args) {
+		
+		HashMap hash = new HashMap();
+		
+		hash.put("dd", 33);
+		hash.put("ee", 89);
+		hash.put("ff", 64);
+		
+		for (int i = 0; i < hash.size(); i++) {
+			System.out.println(hash.keySet());
+		}
+
+	}
+
+}
