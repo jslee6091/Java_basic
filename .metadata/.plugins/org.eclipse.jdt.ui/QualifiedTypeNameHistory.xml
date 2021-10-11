@@ -43,4 +43,6 @@
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="webdeveloper_one.doitjava.InputLoginBean_M"/>
     <fullyQualifiedTypeName name="webdeveloper_one.doitjava.InputLoginBean_A"/>
+    <fullyQualifiedTypeName name="webdeveloper_one.doitjava.exam.InputLogin"/>
+    <fullyQualifiedTypeName name="webdeveloper_one.doitjava.exam.ShopManager"/>
 </qualifiedTypeNameHistroy>

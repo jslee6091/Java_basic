@@ -1,0 +1,54 @@
+package webdeveloper_one.doitjava.exam;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+public class ShopManager {
+
+	public static HashMap user = new HashMap();
+	public static BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) {
+		
+//		user.put(1, new InputLogin("이재성", "jaesung", "aa@email.com", "서울", "jaesunglee"));
+//		user.put(2, new InputLogin("이재성2", "jaesung2", "aa2@email.com", "서울", "jaesunglee2"));
+//		user.put(3, new InputLogin("이재성3", "jaesung3", "aa3@email.com", "서울", "jaesunglee3"));
+//		user.put(4, new InputLogin("이재성4", "jaesung4", "aa4@email.com", "서울", "jaesunglee4"));
+//		user.put(5, new InputLogin("이재성5", "jaesung5", "aa5@email.com", "서울", "jaesunglee5"));
+		
+		// 먼저 로그인을 시도
+		// 없으면 회원가입으로 진행 후 가입 성공
+		// 있으면 로그인 성공
+		
+		try {
+			System.out.println("로그인을 진행합니다.");
+			System.out.println("아이디를 입력하세요");
+			String id = buff.readLine();
+			System.out.println("패스워드를 입력하세요");
+			String pw = buff.readLine();
+			new Login(id, pw);
+			
+			System.out.println("회원가입을 진행합니다");
+			System.out.println("아이디를 입력하세요");
+			id = buff.readLine();
+			System.out.println("패스워드를 입력하세요");
+			pw = buff.readLine();
+			System.out.println("이메일을 입력하세요");
+			String email = buff.readLine();
+			System.out.println("주소를 입력하세요");
+			String addr = buff.readLine();
+			System.out.println("repasswd를 입력하세요");
+			String repw = buff.readLine();
+			
+			new InputLogin(id, pw, email, addr, repw);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package webdeveloper_one.doitjava.exam;
+
+public class InputLogin {
+
+	public static String userid;
+	public static String passwd;
+	public static String email;
+	public static String address;
+	public static String repasswd;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
