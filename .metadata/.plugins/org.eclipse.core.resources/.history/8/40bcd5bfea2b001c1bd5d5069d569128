@@ -1,0 +1,45 @@
+package webdeveloper_one.doitjava.present;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+public class Leejaesung_present {
+
+	public String name;
+	public int age;
+	public String address;
+	public String email;
+	public String phone;
+	public int todayq;
+	public int weekq;
+	public int mprojectq;
+	public int projectq;
+	public String position;
+	public int positionpoint;
+	
+	public static ArrayList info = new ArrayList();
+	public static Hashtable users = new Hashtable();
+	
+	public static void main(String[] args) {
+		File file = new File("C:\\project\\project\\test.txt");
+		try {
+//			FileWriter filewr = new FileWriter(file);
+			PrintWriter printwr = new PrintWriter(file);
+			for(int i = 0; i < 5; i++) {
+				printwr.print("Hello\n");
+				printwr.print("World\n");
+			}
+			printwr.close();
+//			filewr.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

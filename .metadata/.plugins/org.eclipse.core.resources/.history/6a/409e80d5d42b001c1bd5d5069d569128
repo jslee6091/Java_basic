@@ -1,0 +1,16 @@
+package webdeveloper_one.doitjava;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Set_2 {
+
+	public static BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+	
+	public static void main(String[] args) {
+		// LinkedHashSet
+		// userid, address 추가입력(io), 삭제(이름 또는 주소로 삭제), 리스트 출력
+		
+	}
+
+}

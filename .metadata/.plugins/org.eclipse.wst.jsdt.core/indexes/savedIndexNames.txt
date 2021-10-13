@@ -1,7 +1,5 @@
-INDEX VERSION 1.4+C:\Users\jslee\OneDrive\πŸ≈¡ »≠∏È\Java_basic\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1091556184.index
-1184808792.index
-1462970888.index
-3592971923.index
-1769688007.index
-3842711404.index
+INDEX VERSION 1.4+C:\project\work\jwork\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3528088938.index
+3423124493.index
+1237405825.index
+635625352.index

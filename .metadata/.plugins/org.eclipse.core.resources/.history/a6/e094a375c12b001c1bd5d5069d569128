@@ -1,0 +1,22 @@
+package webdeveloper_one.doitjava;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class ArrayListLinkedList_1 {
+
+	public static void main(String[] args) {
+		ArrayList arraylist = new ArrayList();
+		LinkedList linklist = new LinkedList();
+		
+		Long start = System.nanoTime();
+		for (int i = 0; i < 100000; i++) {
+			linklist.add(i);
+		}
+		
+		Long end = System.nanoTime();
+		System.out.println("input time : " + (end - start) + "ns");
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package webdeveloper_one.doitjava;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+
+public class ArrayListLinkedList_1 {
+
+	public static void main(String[] args) {
+		ArrayList arraylist = new ArrayList();
+		LinkedList linklist = new LinkedList();
+		
+		int start = (int)System.currentTimeMillis();
+		for (int i = 0; i < 1000000; i++) {
+			linklist.add(i);
+		}
+		
+		int end = (int)System.currentTimeMillis();
+		System.out.println("linkdlist input time : " + (end - start) + "ns");
+
+		start = (int)System.currentTimeMillis();
+		for (int i = 0; i < 1000000; i++) {
+			arraylist.add(i);
+		}
+		
+		end = (int)System.currentTimeMillis();
+		System.out.println("arraylist input time : " + (end - start) + "ns");
+		
+		LinkedHashMap linkedmap = new LinkedHashMap();
+		start = (int)System.currentTimeMillis();
+		for (int i = 0; i < 1000000; i++) {
+			linkedmap.put(i, i);
+		}
+		end = (int)System.currentTimeMillis();
+		System.out.println("linkedmap input time : " + (end - start) + "ns");
+		
+		
+	}
+
+}
