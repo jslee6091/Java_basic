@@ -1,0 +1,10 @@
+package webdeveloper_one.todayq;
+
+public class TodayBoard {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
