@@ -10,7 +10,7 @@ public class Hash_2 {
 		 * Map은 hash의 부모이다
 		 */
 		
-		Hashtable<Object, Object> hash = new Hashtable<Object, Object>();
+		Hashtable hash = new Hashtable();
 		hash.put(1, 1);
 		hash.put(2, 2);
 		hash.put(3, 3);
